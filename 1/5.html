@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>封装一个对数组元素进行冒泡排序的函数（从大到小）</title>
+    <script>
+        var arr = [64,89,489,26];
+        function fun (reArr) {
+            for (var i = 0; i<= reArr.length; i++) {
+                for (var j = 0; j<= reArr.length; j++) {
+                    if (reArr[i] > reArr[j]) {
+                        var temp = reArr[i];
+                        reArr[i] = reArr[j];
+                        reArr[j] = temp;
+                    }
+                }
+            }
+            return reArr;
+        }
+        document.write(fun(arr));
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
